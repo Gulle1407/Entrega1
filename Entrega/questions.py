@@ -26,7 +26,7 @@ correct_answers_index = [1, 2, 0, 3, 1]
 score=0.0
 
 #aqui tengo una lista con 3 ternas aleatorias compuestas de la siguiente manera (pregunta,posibles respuestas,respuesta correcta)    es decir(un string,una tupla(?,un integer)  !!!!!!!
-questions_to_ask = random.choices(list(zip(questions,answers, correct_answers_index)), k=3)
+questions_to_ask = random.sample(list(zip(questions,answers, correct_answers_index)), k=3)
 
 for question,answer,correct in questions_to_ask:
     
